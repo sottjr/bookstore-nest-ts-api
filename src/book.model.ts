@@ -4,7 +4,7 @@ import { Column, DataType, Model, Table } from 'sequelize-typescript';
 export class Book extends Model<Book> {
   @Column({
     type: DataType.STRING(60),
-    allowNull: false,
+    allowNull: true,
   })
   code: string;
 

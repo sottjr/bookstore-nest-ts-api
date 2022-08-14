@@ -15,8 +15,9 @@ import { Book } from './book.model';
       username: 'root', // usuário do MySQL
       password: 'mysql', // senha do usuário do MySQL
       database: 'bookstore',
-      autoLoadModels: true,
-      synchronize: true,  
+      models: [Book], // modelos do Sequelize
+      // autoLoadModels: true,
+      // synchronize: true,  
     }),
     SequelizeModule.forFeature([ Book ])
   ],
